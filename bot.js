@@ -6,13 +6,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
-    client.on('message', message => {
-    if (message.content === 'arschloch') {
-    	message.reply('selber!');
-  	}
+if (message.content === 'ping') {
+message.reply('pong');
+}
+    
+client.on('message', message => {
+if (message.content === 'arschloch') {
+message.reply('selber!');
+}
 });
 
 // THIS  MUST  BE  THIS  WAY
